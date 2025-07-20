@@ -1,7 +1,7 @@
 fx_version 'bodacious'
 game 'gta5'
 
-author 'hivy'
+author 'Canato'
 description 'Sistema de Ped'
 version '1.0.0'
 
