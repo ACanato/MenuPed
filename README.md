@@ -18,6 +18,7 @@ Este script permite que os jogadores alterem o seu **ped** de forma simples e pr
 
 ## 🛠️ Requisitos
 - **ESX Framework**
+- es_extended 1.1
   
 ---
 
