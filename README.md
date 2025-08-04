@@ -14,7 +14,7 @@ This script allows players to change their **ped** in a simple and practical way
 - Command `/changeped [ped_name] [id]` to apply the ped to yourself or another player.
 - Command `/cancelped [id]` to restore the previous character.
 
-- ### 🌐 Multiple language support
+### 🌐 Multiple language support
 - The script now supports Portuguese, English, Spanish and French
 
 ---
