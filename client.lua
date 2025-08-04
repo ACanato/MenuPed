@@ -9,12 +9,12 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
     end
 
-    TriggerEvent('chat:addSuggestion', '/changeped', 'Mudar o Ped de um jogador', {
+    TriggerEvent('chat:addSuggestion', '/changeped', _('cmd_changeped_desc'), {
         { name="ped", help="Nome do ped" },
         { name="id", help="ID" }
     })
 
-    TriggerEvent('chat:addSuggestion', '/cancelarped', 'Voltar ao normal (Ped)', {
+    TriggerEvent('chat:addSuggestion', '/cancelped', _('cmd_cancelped_desc'), {
         { name="id", help="ID" }
     })
 end)
@@ -56,9 +56,9 @@ AddEventHandler('my_ped_changer:applyPed', function(pedModel)
         SetModelAsNoLongerNeeded(model)
         SetPedDefaultComponentVariation(PlayerPedId())
 
-        ESX.ShowNotification('~g~O ped foi alterado!~w~')
+        ESX.ShowNotification(_('ped_changed'))
     else
-        ESX.ShowNotification('~r~Ped inválido!~w~')
+        ESX.ShowNotification(_('invalid_ped'))
     end
 end)
 
@@ -68,7 +68,7 @@ AddEventHandler('my_ped_changer:revertPed', function()
     local pedState = savedPedStates[playerId]
 
     if not pedState then
-        ESX.ShowNotification('Não foi possivel salvar o personagem!')
+        ESX.ShowNotification(_('save_failed'))
         return
     end
 
