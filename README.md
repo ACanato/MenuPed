@@ -1,30 +1,33 @@
-# 👤 Menu Ped (v1.0)
+# 👤 Menu Ped (v1.1)
 
-Este script permite que os jogadores alterem o seu **ped** de forma simples e prática, ideal para situações de roleplay mais elaboradas.
-
----
-
-## 📌 Funcionalidades Principais
-
-### 🎭 Alteração de Ped
-- Comandos simples para mudar o jogador através de peds.
-- Possibilidade de aplicar a outro jogador através do ID.
-
-### 🎉 Facilidade de Utilização
-- Comando `/changeped [nome_do_ped] [id]` para aplicar o ped a ti próprio ou a outro jogador.
-- Comando `/cancelarped [id]` para obter o personagem antigo de volta.
+This script allows players to change their **ped** in a simple and practical way, ideal for more elaborate roleplay situations.
 
 ---
 
-## 🛠️ Requisitos
+## 📌 Main Features
+
+### 🎭 Ped Change
+- Simple commands to change the player using peds.
+- Ability to apply it to another player via their ID.
+
+### 🎉 Ease of Use
+- Command `/changeped [ped_name] [id]` to apply the ped to yourself or another player.
+- Command `/cancelped [id]` to restore the previous character.
+
+- ### 🌐 Multiple language support
+- The script now supports Portuguese, English, Spanish and French
+
+---
+
+## 🛠️ Requirements
 - **ESX Framework**
 - es_extended 1.1
   
 ---
 
-## 📂 Instalação
+## 📂 Installation
 
-1. Coloca a pasta do script em `resources/`.
-2. Adiciona ao `server.cfg`:
+1. Place the script folder in `resources/`.
+2. Add to the `server.cfg`:
    ```bash
    ensure MenuPed
