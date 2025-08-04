@@ -11,7 +11,7 @@ RegisterCommand('changeped', function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
     
     if not isPlayerAdmin(xPlayer) then
-        xPlayer.showNotification('~r~Não tens permissão para usar este comando.')
+        xPlayer.showNotification(_('no_permission'))
         return
     end
 
@@ -19,37 +19,37 @@ RegisterCommand('changeped', function(source, args)
     local targetId = tonumber(args[2])
 
     if not pedModel or not targetId then
-        xPlayer.showNotification('Usa: /changeped [nome_do_modelo] [id]')
+        xPlayer.showNotification(_('usage_changeped'))
         return
     end
 
     local targetPlayer = ESX.GetPlayerFromId(targetId)
     if not targetPlayer then
-        xPlayer.showNotification('~r~ID inválido!~w~')
+        xPlayer.showNotification(_('invalid_id'))
         return
     end
 
     TriggerClientEvent('my_ped_changer:applyPed', targetId, pedModel)
 end)
 
-RegisterCommand('cancelarped', function(source, args)
+RegisterCommand('cancelped', function(source, args)
     local xPlayer = ESX.GetPlayerFromId(source)
     
     if not isPlayerAdmin(xPlayer) then
-        xPlayer.showNotification('~r~Não tens permissão para usar este comando.')
+        xPlayer.showNotification(_('no_permission'))
         return
     end
 
     local targetId = tonumber(args[1])
 
     if not targetId then
-        xPlayer.showNotification('~r~ID inválido!~w~ Usa: /cancelarped [id]')
+        xPlayer.showNotification(_('usage_cancelarped'))
         return
     end
 
     local targetPlayer = ESX.GetPlayerFromId(targetId)
     if not targetPlayer then
-        xPlayer.showNotification('~r~ID inválido!~w~')
+        xPlayer.showNotification(_('invalid_id'))
         return
     end
 
