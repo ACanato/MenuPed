@@ -1,4 +1,4 @@
-# 👤 Menu Ped (v1.1)
+# 👤 Ped Menu (v1.1)
 
 This script allows players to change their **ped** in a simple and practical way, ideal for more elaborate roleplay situations.
 
