@@ -15,7 +15,7 @@ This script allows players to change their **ped** in a simple and practical way
 - Command `/cancelped [id]` to restore the previous character.
 
 ### 🌐 Multiple language support
-- The script now supports Portuguese, English, Spanish and French
+- The script supports Portuguese, English, Spanish and French
 
 ---
 
